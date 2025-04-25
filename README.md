@@ -1,4 +1,4 @@
-# Open Virtual Steering with MotionIMU
+# Open Virtual Steering with MotionIMU & Bluefruit
 
 The **Romans** knew it already: _"Sterzare Necesse Est!"_ (free after Plutarch), and it still holds true in the world of **virtual cycling**.
 
@@ -20,15 +20,14 @@ This repository focuses on using an **MPU-6050 IMU** sensor, a 3-axis accelerome
 ![Open Virtual Steering Diagram](/media/OpenVirtualSteering_Overview.png)
 
 ## 📚 Related OVS Repositories
-- [`BLE-Steering-Server`](https://github.com/Berg0162/BLE-Steering-Server) - Critical Shared Backend (Arduino library)
-- [`OpenVirtualSteering-DiscreteHIDs`](https://github.com/Berg0162/OpenVirtualSteering-DiscreteHIDs) – Buttons, Joysticks, Rotary Encoder  
-- [`OpenVirtualSteering-VoiceControl`](https://github.com/Berg0162/OpenVirtualSteering-VoiceControl) – Voice input via ML on MEMS microphones
+- [`Bluefruit-Steering-Server`](https://github.com/Berg0162/Bluefruit-Steering-Server) - Critical Shared Backend (Arduino library)
+- [`Open-Virtual-Steering-DiscreteHID-Bluefruit`](https://github.com/Berg0162/Open-Virtual-Steering-DiscreteHID-Bluefruit) – Buttons, Joysticks, Rotary Encoder  
 
 ## 🧭 How It Works
 
-This firmware functions as a **BLE Steering Controller**, structured around two main building blocks:
+This firmware functions as a **Bluefruit Steering Controller**, structured around two main building blocks:
 
-1. 🧱 **BLESteeringServer**  
+1. 🧱 **BluefruitSteeringServer**  
    A reusable BLE library responsible for advertising, pairing, and sending steering data using a BLE steering profile.
 
 2. 🎮 **Motion-Based HID Handler**  
@@ -50,13 +49,19 @@ The <b>DMP</b> pre-processed MPU-6050 data is next handled in firmware code usin
 
 ## 🧱 Dependencies
 
-+ [Arduino core for ESP32](https://github.com/espressif/arduino-esp32)
-+ [NimBLE-Arduino version 2.x](https://github.com/h2zero/NimBLE-Arduino)
-+ [BLESteeringServer](https://github.com/Berg0162/BLE-Steering-Server)
-+ [MPU6050_light](https://github.com/rfetick/MPU6050_light)
-+ **Supported MCU's** with **NimBLE-Arduino**
-    - Espressif: ESP32, ESP32C3, ESP32S3
-    - Nordic: nRF51, nRF52 series (**Requires** using [n-able arduino core](https://github.com/h2zero/n-able-Arduino))
++ [Adafruit nRF52 Arduino Core](https://github.com/adafruit/Adafruit_nRF52_Arduino)
++ [Adafruit Bluefruit Library (Source)](https://github.com/adafruit/Adafruit_nRF52_Arduino/tree/master/libraries/Bluefruit52Lib)
++ [BluefruitSteeringServer](https://github.com/Berg0162/Bluefruit-Steering-Server)
+> 💡 This library is built specifically for **Adafruit's Bluefruit platform**, and is not compatible with NimBLE-based ESP32 boards.
+
+### **Supported MCU Boards**
++ Nordic Semiconductor **nRF52 series**
+  - 🟢 Adafruit Feather nRF52840 Express
+  - 🟢 Adafruit ItsyBitsy nRF52840
+  - 🟢 Adafruit CLUE, Bluefruit Sense, and other nRF52 boards with BLE support
+
+To install the core:
+- Follow Adafruit's guide: [Install Adafruit nRF52 Arduino Core](https://learn.adafruit.com/bluefruit-nrf52-feather-learning-guide/arduino-bsp-setup)
 
 ## 🧪 Testing & Validation
 
