@@ -33,7 +33,7 @@ This firmware functions as a **Bluefruit Steering Controller**, structured aroun
 2. 🎮 **Motion-Based HID Handler**  
    This repository uses an **MPU6050 motion sensor** to interpret **roll** and **yaw** movement of the bike or handlebars. Sensor data is processed using Kalman and EMA filters, and converted into smooth, real-time steering angles.
 
-The firmware continuously monitors motion, filters out noise and unintentional movement (like out-of-saddle rocking), and sends validated steering commands via `BLESteeringServer::updateSteeringValue()`.
+The firmware continuously monitors motion, filters out noise and unintentional movement (like out-of-saddle rocking), and sends validated steering commands via `BluefruitSteeringServer::updateSteeringValue()`.
 
 ## 🌀 MPU-6050
 The MPU-6050 is a 6-axis (combines 3-axis Gyroscope plus 3-axis Accelerometer) motion tracking devices. Changes in motion, acceleration and rotation can be detected. It is commonly used in robotics, gaming controllers, and other electronic devices that require motion detection. Its high accuracy and low cost make it very popular among the DIY community. <br>
