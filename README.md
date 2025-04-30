@@ -52,6 +52,8 @@ The <b>DMP</b> pre-processed MPU-6050 data is next handled in firmware code usin
 + [Adafruit nRF52 Arduino Core](https://github.com/adafruit/Adafruit_nRF52_Arduino)
 + [Adafruit Bluefruit Library (Source)](https://github.com/adafruit/Adafruit_nRF52_Arduino/tree/master/libraries/Bluefruit52Lib)
 + [BluefruitSteeringServer](https://github.com/Berg0162/Bluefruit-Steering-Server)
++ HID specific library
+   - [MPU6050_light](https://docs.arduino.cc/libraries/mpu6050_light)
 > 💡 This library is built specifically for **Adafruit's Bluefruit platform**, and is not compatible with NimBLE-based ESP32 boards.
 
 ### **Supported MCU Boards**
