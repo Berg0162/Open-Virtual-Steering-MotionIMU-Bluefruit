@@ -5,7 +5,12 @@ The **Romans** knew it already: _"Sterzare Necesse Est!"_ (free after Plutarch),
 <details>
 <summary>What it means</summary>
   
-The original quote **Navigare Necesse Est** ("To Sail is Necessary") was humorously adapted here by replacing _Navigare_ with the Italian verb for [**steering**](https://en.wiktionary.org/wiki/sterzare), aligning it with the project's theme.
+The phrase is a playful remix of the Latin saying **"Navigare Necesse Est"** ("To sail is necessary"). Replacing _Navigare_ with [**Sterzare**](https://en.wiktionary.org/wiki/sterzare) — the Italian verb for _steering_ — reflects the project’s goal: enhancing interaction through alternative inputs like motion (with an IMU).<br>
+
++ More autonomy: increased user-experience
+  + Ride the optimal line through a corner
+  + Turn left or right at intersections
+  + Tactical positioning in a group
 </details>
 
 This repo is part of the **Open Virtual Steering (OVS)** initiative, a research-driven open-source project exploring **alternative input methods** for **steering in virtual cycling platforms**.<br>
